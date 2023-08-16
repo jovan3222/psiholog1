@@ -1,0 +1,87 @@
+@media (min-width: 480px) {
+    header {
+            height: 70px;
+            width: 100%;
+        }
+        
+        .navbar {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            width: 100%; /*used*/
+            height: 70px;
+            border-bottom: 1px solid lightgray;
+
+        }
+    
+        .header-logo-anchor {
+            display: block;
+            width: 128px;
+            height: 70px;
+            margin-left: 170px; /*used*/
+        }
+    
+        .header-logo {
+            width: 108px;
+            height: 55px;
+        }
+    
+        .links-trigger {
+            display: none; /*used*/
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50px;
+            height: 40px;
+            margin: 0 170px 0 0; /*used*/
+            align-self: center;
+            cursor: pointer; /*used*/
+        }
+    
+        .trigger-line {
+            width: 100%;
+            height: 2px;
+            background-color: #292929;
+            transition: transform .5s, margin-top .5s;
+        }
+    
+        .links-container {
+            position: static; /*used*/
+            display: flex;
+            flex-direction:row;
+            align-items: flex-start;
+            top: 1px;
+            right: 0;
+            width: 500px; /*used*/
+            min-height: 0;
+            background-color: white;
+            border-left: none;
+            transition: right .5s;
+            margin-right: 110px;
+        }
+    
+        .nav-link {
+            display: flex;
+            text-align: center;
+            text-decoration: none;
+            color: #474747;
+            margin: 17px 30px 10px 30px;
+            padding: 0;
+            font-size: calc(22rem/16); /*used*/
+            transition: opacity 3s;
+            font-weight: bold;
+        }
+    
+        .nav-link1 {
+            margin-top: 17px;
+        }
+    
+        .navbar-shadow {
+            position: fixed;
+            top: 71px;
+            width: 1440px;
+            height: 150vh;
+            background-color: #1c1c1c;
+            z-index: -1;
+            transition: opacity .5s;
+        }
+}
